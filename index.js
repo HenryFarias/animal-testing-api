@@ -13,4 +13,6 @@ app.get('/', (req, res) => {
     })
 })
 
-app.listen(80)
+app.listen(process.env.PORT || 80, () => {
+    console.log('App listening on port 80!')
+})
